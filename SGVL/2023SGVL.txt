@@ -1,0 +1,8 @@
+@inproceedings{
+herzig2023incorporating,
+title={Incorporating Structured Representations into Pretrained Vision {\textbackslash}\& Language Models Using Scene Graphs},
+author={Roei Herzig and Alon Mendelson and Leonid Karlinsky and Assaf Arbelle and Rogerio Feris and Trevor Darrell and Amir Globerson},
+booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
+year={2023},
+url={https://openreview.net/forum?id=7DueCuvmgM}
+}
