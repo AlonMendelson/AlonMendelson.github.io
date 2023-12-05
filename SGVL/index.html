@@ -228,5 +228,23 @@ Our method improves the performance of several popular VLMs on multiple VL datas
     <br>
     Here we show that it is indeed possible to improve VLMs using image-SG pairs by integrating components that incorporate structure into both visual and textual representations.
 </p>
+<br><br><br>
+<hr>
+<table align=center>
+    <center><h1 id="block">SGVL Approach</h1></center>
+</table>
+<p>
+    Our first step is to convert SGs into highly detailed captions.
+    A naive approach would be to finetune VLMs on these image-text pairs, however, this approach does not sufficiently improve performance.
+    This is also aligned with recent work showing that contrastive learning approaches allow the model to concentrate mainly on object labels disregarding other important aspects.
+    Hence, We use the SG to generate hard-negative captions that highlight structural aspects when used with an appropriate loss. 
+</p>
+
+<p>
+    Next, we turn to introduce structure into the visual representation.
+    Inspired by prompt learning approaches, we incorporate into the image transformer encoder a set of ``Adaptive Scene Graph Tokens'', which interact with the patch and CLS tokens via attention.
+    By training these tokens to predict SG information, the encoder can capture better structured representations.
+</p>
+<center><img src="data/figures/haog.png" width="400cm" height="279cm" align="middle"></center>
 </body>
 </html>
