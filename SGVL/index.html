@@ -209,6 +209,24 @@ Here we ask whether small SG datasets can provide sufficient information for enh
 We show that it is indeed possible to improve VLMs when learning from SGs by integrating components that incorporate structured information into both visual and textual representations.
 For the visual side, we incorporate a special ``SG Component'' in the image transformer trained to predict SG information, while for the textual side, we utilize SGs to generate fine-grained captions that highlight different compositional aspects of the scene.
 Our method improves the performance of several popular VLMs on multiple VL datasets with only a mild degradation in ZS capabilities.
-
+<br><br><br>
+<hr>
+<table align=center>
+    <center><h1 id="motivation">Motivation</h1></center>
+</table>
+<p>
+    In recent years, vision and language models (VLMs) have demonstrated impressive results on a wide variety of tasks.
+    However, recent empirical studies have shown that even the strongest VLMs struggle to perform compositional scene understanding, including identifying object attributes and inter-object relations.
+    Understanding the structure of visual scenes is a fundamental problem in machine perception and has been explored extensively. In particular, datasets with scene graph (SG) annotations, such as the Visual Genome (VG), have been collected and used to improve scene understanding models.
+    However, such datasets are expensive to collect at scale and relatively small compared to those used in training VLMs.
+    <br>
+    This raises the following questions:
+    <br>
+    (1) Can small datasets containing SG annotations be utilized to finetune VLMs and improve compositional scene understanding?
+    <br>
+    (2) How should the model and training be adapted to best use this data?
+    <br>
+    Here we show that it is indeed possible to improve VLMs using image-SG pairs by integrating components that incorporate structure into both visual and textual representations.
+</p>
 </body>
 </html>
